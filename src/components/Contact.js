@@ -1,48 +1,100 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import './Contact.css'
 
-const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+function ContactForm() {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
-    const handleChange = (event) => {
-        setFormData({
-            ...formData,
-            [event.target.name]: event.target.value
-        });
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Submit the form data to your server here
+  };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        // add logic here to send formData to backend or email service
-        alert(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
-    }
+  return (
+    <div className="connect-con">
+      <h1>You can connect with me here!</h1>
+      <p>
+        If you have any additional questions, or just want to reach out to me,
+        please feel free to contact me here:
+      </p>
+      <div className="connect-box">
+        <div className="connect-l">
+          <h3>Contact Form</h3>
+          <form onSubmit={handleSubmit}>
+            <div className="input-row">
+              <div className="input-group">
+                <label>Name</label>
+                <input
+                  type="text"
+                  placeholder="John Smith"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div className="input-group">
+                <label>Phone</label>
+                <input
+                  type="text"
+                  placeholder="+61 123 456 789"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                />
+              </div>
+              <div className="input-group">
+                <label>Email</label>
+                <input
+                  type="text"
+                  placeholder="JohnSmith@gmail.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="input-group">
+                <label>Subject</label>
+                <input
+                  type="text"
+                  placeholder="Hello World!"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                />
+              </div>
+            </div>
 
-    return (
-        <div className="contact-page">
-            <h1 className="contact-page__title">Contact Us</h1>
-            <form className="contact-page__form" onSubmit={handleSubmit}>
-                <label className="contact-page__label">
-                    <span className="contact-page__label-text">Name:</span>
-                    <input className="contact-page__input" type="text" name="name" value={formData.name} onChange={handleChange} />
-                </label>
-                <br />
-                <label className="contact-page__label">
-                    <span className="contact-page__label-text">Email:</span>
-                    <input className="contact-page__input" type="email" name="email" value={formData.email} onChange={handleChange} />
-                </label>
-                <br />
-                <label className="contact-page__label">
-                    <span className="contact-page__label-text">Message:</span>
-                    <textarea className="contact-page__textarea" name="message" value={formData.message} onChange={handleChange} />
-                </label>
-                <br />
-                <button className="contact-page__submit-button" type="submit">Submit</button>
-            </form>
+            <label>Message</label>
+            <textarea
+              rows="5"
+              placeholder="Write your message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <button type="submit">Send Message</button>
+          </form>
         </div>
-    );
+        <div className="connect-r">
+          <h3>Contact Details</h3>
+          <table>
+            <tr>
+              <td>Email:</td>
+              <td>MyEmail@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Phone:</td>
+              <td>+61 987 654 321</td>
+            </tr>
+            <tr>
+              <td>Address:</td>
+              <td>
+                U2 22 Fake Street, Gold Coast, QLD, 4227
+                </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Contact
+export default ContactForm;

@@ -1,0 +1,60 @@
+.title {
+    margin-top: 20vh;
+    text-align: center;
+    color: white;
+}
+
+.social-item {
+    width: 33.33%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-link {
+    margin-left: 4rem;
+    margin-right: 6rem;
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.social-link:hover {
+    background-color: #533093;
+    transition: 400ms;
+    border-radius: 15%;
+}
+
+.social-text {
+    text-decoration: none;
+    color: white;
+}
+.social-link:visited {
+    color: white;
+}
+
+.social-link svg{
+    filter: invert(72%) sepia(1%) saturate(3597%) hue-rotate(208deg) brightness(97%) contrast(89%);
+}
+
+
+@media only screen and (min-width:1201px) {
+.social-link {
+    width: 8rem;
+    height: 8rem;
+    }
+.social-column {
+    margin-left: 30%;
+    width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .social-link {
+        width: 8rem;
+        height: 8rem;
+    }
+}

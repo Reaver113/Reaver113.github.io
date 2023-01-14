@@ -1,5 +1,6 @@
 import React from "react"
 import Pfp from "../img/Pfp.jpg"
+import './Home.css'
 
 const Home = () => {
     return(
