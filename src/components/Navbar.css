@@ -2,6 +2,7 @@
     position: fixed;
     background-color: #23232e;
     transition: width 200ms ease;
+    opacity: .8;
 }
 
 .navbar-nav {
