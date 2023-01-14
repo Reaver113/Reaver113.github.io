@@ -1,17 +1,21 @@
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {Navigate} from "react-router-dom"
 import Home from "./components/Home"
-import CategorySelection from './components/CategorySelection'
-import NewEntry from './components/NewEntry'
+import Contact from "./components/Contact"
+import Navbar from './components/Navbar'
 
 const App = () => {
 return (
     <div>
         <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/category" element={<CategorySelection />} />
-                <Route path="/entry/new" element={<NewEntry />} />
-            </Routes>
+            <Navbar/>
+            <main>
+                <Routes>
+                    <Route path="/" element={<Home/>} exact />
+                    <Route path="/Contact" element={<Contact />} exact />
+                    <Route path="*" element={<Navigate to="/"/>} />
+                </Routes>
+            </main>
         </Router>
     </div>
 )

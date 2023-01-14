@@ -1,5 +1,5 @@
 import React from "react"
-import Pfp from "./Pfp.jpg"
+import Pfp from "../img/Pfp.jpg"
 
 const Home = () => {
     return(
