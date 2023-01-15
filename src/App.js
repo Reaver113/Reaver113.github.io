@@ -5,7 +5,6 @@ import Contact from "./components/Contact"
 import Navbar from './components/Navbar'
 import Projects from "./components/Projects"
 import Links from "./components/Links"
-import Background from "./components/Background";
 
 const App = () => {
 return (
