@@ -10,7 +10,7 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Submit the form data to your server here
+    // SERVER LINK FOR EMAIL SERVICES GOES HERE
   };
 
   return (
