@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8cc2bdb.css",
-    "main.js": "/static/js/main.b8bac1c1.js",
-    "static/js/787.cc4952dd.chunk.js": "/static/js/787.cc4952dd.chunk.js",
-    "static/media/Purple.mp4": "/static/media/Purple.28f05ccde570ed600733.mp4",
-    "static/media/Pfp.jpg": "/static/media/Pfp.377aa85d8c4ad2eff5f9.jpg",
-    "static/media/Jason_Alcock_CV.pdf": "/static/media/Jason_Alcock_CV.6de7be0463e0c7ece3b0.pdf",
-    "index.html": "/index.html",
-    "main.d8cc2bdb.css.map": "/static/css/main.d8cc2bdb.css.map",
-    "main.b8bac1c1.js.map": "/static/js/main.b8bac1c1.js.map",
-    "787.cc4952dd.chunk.js.map": "/static/js/787.cc4952dd.chunk.js.map"
+    "main.css": "/reaver113.github.io/static/css/main.d8cc2bdb.css",
+    "main.js": "/reaver113.github.io/static/js/main.58796edd.js",
+    "static/js/787.cc4952dd.chunk.js": "/reaver113.github.io/static/js/787.cc4952dd.chunk.js",
+    "static/media/Purple.mp4": "/reaver113.github.io/static/media/Purple.28f05ccde570ed600733.mp4",
+    "static/media/Pfp.jpg": "/reaver113.github.io/static/media/Pfp.377aa85d8c4ad2eff5f9.jpg",
+    "static/media/Jason_Alcock_CV.pdf": "/reaver113.github.io/static/media/Jason_Alcock_CV.6de7be0463e0c7ece3b0.pdf",
+    "index.html": "/reaver113.github.io/index.html",
+    "main.d8cc2bdb.css.map": "/reaver113.github.io/static/css/main.d8cc2bdb.css.map",
+    "main.58796edd.js.map": "/reaver113.github.io/static/js/main.58796edd.js.map",
+    "787.cc4952dd.chunk.js.map": "/reaver113.github.io/static/js/787.cc4952dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8cc2bdb.css",
-    "static/js/main.b8bac1c1.js"
+    "static/js/main.58796edd.js"
   ]
 }
