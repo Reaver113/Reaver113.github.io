@@ -8,7 +8,7 @@
     .about {
         text-align: left;
         margin-left: 25vw;
-        margin-right: 10rem;
+        margin-top: 2em;
     }
     .pfp {
         border-radius: 50%;
@@ -17,6 +17,7 @@
         float: right;
         margin-right: 25vw;
         margin-top: 18rem;
+        margin-left: 2em;
     }
 }
 
